@@ -457,6 +457,8 @@ html.deep-link-result #screen-result { display: flex; }
   line-height: 1.6;
   margin: 4px 0 16px;
 }
+.result-kango { font-size: 0.86rem; color: var(--text-sub); line-height: 1.7; margin: -8px 0 14px; }
+.result-kango a { color: var(--gold-bright); white-space: nowrap; }
 .result-desc { font-size: 0.92rem; line-height: 1.85; color: var(--text); text-align: left; margin-bottom: 14px; }
 .result-subhead {
   font-family: "Cinzel", "Shippori Mincho", serif;

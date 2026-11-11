@@ -309,6 +309,7 @@ function computeDaYun(pillars, y, m, d, hour, minute, gender) {
 const DAY_MASTER_TYPES = {
   0: { // 甲
     title: '大樹', reading: 'きのえ',
+    shareFlaw: '頼られるのは慣れてるのに、頼るのは下手でしょう',
     line: 'あなたは、甲(きのえ)。天へ一直線に幹を伸ばす大樹よ。',
     desc: '曲がったことが大嫌いで、一度「こうだ」と決めたら簡単には折れない。その揺るがなさが、周りに安心と方向を与えているのよ。大樹の下に人が集まるように、あなたの周りには自然と人が寄ってくるはず。ただね、幹が太い木ほど、しなることを知らないと嵐で折れるの。あなたの弱点は、強さそのもの。頼られることには慣れているのに、頼ることを知らないでしょう。根を張るというのは、一人で立つことじゃない。支え合う土を持つことよ。たまには枝を下ろして、誰かに寄りかかりなさい。それができた時、あなたは本当の意味で大きくなるわ。',
     work: '指示を待つより自分で切り拓く立場で伸びるタイプ。裁量を持たせれば持たせるほど成果を出すから、リーダーや独立の道を恐れないことね。ただし、まっすぐ進むあまり周りの声が耳に入らなくなる癖がある。振り返ったら誰もいなかった、なんて事態だけは避けなさい。',
@@ -319,6 +320,7 @@ const DAY_MASTER_TYPES = {
   },
   1: { // 乙
     title: '草花', reading: 'きのと',
+    shareFlaw: '合わせるのが上手すぎて、自分の咲き方を忘れるのよ',
     line: 'あなたは、乙(きのと)。踏まれても翌朝には立ち上がる草花よ。',
     desc: '一見か弱そうに見えて、その実、誰よりも粘り強い人。強風には逆らわず身を伏せて、嵐が過ぎればまた顔を上げる。そのしなやかさこそ、あなたの生き抜く知恵よ。どんな環境に植え替えられても、いつの間にか根づいてしまう適応力は天賦のもの。ただね、周りに合わせることが上手すぎて、「本当は自分がどう咲きたいのか」を見失う瞬間があるでしょう。譲ってばかりの優しさは、いつしか周りに甘えられるだけの都合の良さに変わるの。折れない草には、静かな意地があるものよ。時には風に逆らって、あなた自身の色で咲きなさい。',
     work: 'チームの隙間を埋める調整役として、なくてはならない存在になるタイプ。空気を読み、角を立てずに物事を進める力は立派な才能よ。ただ、意見を求められた場面でまで一歩引いていると、その働きは誰にも見えないまま。ここぞという時は、はっきり言葉にしなさい。',
@@ -329,6 +331,7 @@ const DAY_MASTER_TYPES = {
   },
   2: { // 丙
     title: '太陽', reading: 'ひのえ',
+    shareFlaw: '人前で輝いた分、一人になると燃え尽きがちなのよ',
     line: 'あなたは、丙(ひのえ)。何もかも照らし出す真昼の太陽よ。',
     desc: '隠そうとしても隠しきれない、生まれつきの華がある人。喜怒哀楽がそのまま顔に出て、その裏表のなさが周りの心まで明るくするの。あなたが部屋に入るだけで空気が変わる、そんな経験があるでしょう。ただね、太陽は沈むところを人に見せないもの。人前で輝くほどに、一人になった夜の静けさが応えるはずよ。熱しやすく冷めやすいのも、常に燃えていないと不安だから。でも、照らし続けるためには、自分を休ませる時間が要るの。誰も見ていない場所で充電することを、後ろめたく思わないことね。翳りも含めて、あなたは太陽なのよ。',
     work: '人前に立つ・発信する・場を沸かせる役割で本領を発揮するわ。営業や企画、表舞台の仕事とは相性抜群よ。ただ、日の当たらない地道な作業になると、途端に燃料切れを起こすでしょう。派手さのない仕事をやり切る力こそ、あなたの輝きを本物にするの。',
@@ -339,6 +342,7 @@ const DAY_MASTER_TYPES = {
   },
   3: { // 丁
     title: '灯火', reading: 'ひのと',
+    shareFlaw: '誰より深く考えてるのに『何を考えてるかわからない』と言われるのよ',
     line: 'あなたは、丁(ひのと)。闇の中でこそ美しく揺れる灯火よ。',
     desc: '物静かな佇まいの奥に、誰にも消せない炎を隠している人。感受性が鋭く、人の心の機微を細部まで感じ取ってしまう。だから傷つきやすいし、人一倍疲れやすいのよ。周りには「何を考えているかわからない」と言われても、実際はその場の誰よりも深く考え、深く感じている。太陽のように万人を照らす必要はないの。灯火の光は、暗闇にいる誰か一人の足元を照らすためにあるもの。それがあなたの役目よ。ただ、内に秘めた熱は、表に出さなければ無いのと同じに扱われてしまう。想いの一割でいいから、言葉と行動にして見せなさい。',
     work: '一つの分野をじっくり掘り下げる専門的な仕事や、少人数で丁寧に取り組む仕事が向いているわ。派手に目立つより、静かに信頼を積み上げていくタイプ。無理に社交的な役回りを演じると芯から消耗するから、自分の燃え方を守れる環境を選びなさい。',
@@ -349,6 +353,7 @@ const DAY_MASTER_TYPES = {
   },
   4: { // 戊
     title: '山', reading: 'つちのえ',
+    shareFlaw: '動じないのはいいけど、自分からも動かないでしょう',
     line: 'あなたは、戊(つちのえ)。千年動かぬ、悠然たる山よ。',
     desc: '多少の嵐ではびくともしない、生まれついての安定感がある人。周りが浮き足立つ場面ほど、あなたの静けさが皆の支えになるの。「あの人がいると安心する」、そう言われてきたでしょう。ただ、動かない山は、裏を返せば自分からは動かない山でもある。慣れた場所、慣れたやり方に居座りすぎて、変化への一歩が億劫になっていないかしら。でもね、あなたが一度腹を決めた時の実行力は、誰にも真似できないほど大きいのよ。周りが「まさかあの人が」と驚く決断を、静かに下せる人。その力を、守りだけでなく攻めにも使いなさい。',
     work: '長期戦でこそ光るタイプ。コツコツ積み上げる仕事や、責任を預かる管理的な立場が性に合うわ。方針がころころ変わる職場や、スピード一辺倒の環境は消耗するだけ。ただ、石橋を叩きすぎて好機を逃す癖があるわね。たまには叩かずに渡る勇気も持ちなさい。',
@@ -359,6 +364,7 @@ const DAY_MASTER_TYPES = {
   },
   5: { // 己
     title: '田畑', reading: 'つちのと',
+    shareFlaw: '尽くしすぎて、自分を耕すのを忘れるのよ',
     line: 'あなたは、己(つちのと)。蒔かれた種を残らず育て上げる、豊かな田畑よ。',
     desc: '人を育て、支えることに天性の才を持つ人。あなたの何気ない一言や手助けに救われた人は、あなたが思っているより、ずっと多いのよ。土が黙って作物を育てるように、見返りを求めず尽くせるのがあなたの器。ただね、土だって痩せるの。栄養を与え続けるばかりで、自分自身を耕すことを忘れていないかしら。誰かの実りを喜んでいるうちに、ふと「自分の人生はどこにあるの」と虚しくなる夜が来るはずよ。人に注ぐ愛情の二割でいい、自分に向けなさい。あなたという畑が肥えてこそ、育てられる実りも大きくなるのだから。',
     work: '育てる・支える・まとめる役割で真価を発揮するタイプ。教育や人材育成、サポート職、縁の下の要となる仕事と相性がいいわ。ただ、手柄を人に譲る癖のせいで、正当な評価を取りこぼしがち。成果は自分の口で伝えなさい。それは自慢ではなく、報告よ。',
@@ -369,6 +375,7 @@ const DAY_MASTER_TYPES = {
   },
   6: { // 庚
     title: '刃', reading: 'かのえ',
+    shareFlaw: '正しいことを、言わなくていい場面でも言うでしょう',
     line: 'あなたは、庚(かのえ)。曇りなく研ぎ澄まされた刃よ。',
     desc: '曖昧なものを曖昧なままにしておけない、切れ味鋭い人。白か黒か、正しいか間違いか。その明快さと決断の速さは、迷いだらけの世の中で得がたい強さよ。皆が言いよどむことを、あなたは真っ先に口にできる。ただね、よく切れる刃ほど、振るう場所を選ばなければ人を傷つけるの。あなたの「正しさ」は、いつも誰かの「事情」を切り捨てていないかしら。刃の本当の価値は、何を切るかではなく、何を切らずにおくかで決まるのよ。抜くべき時と、鞘に収めておくべき時。その見極めができた時、あなたは本物になるわ。',
     work: '決断と実行が求められる局面でこそ輝くタイプ。交渉ごとや、膿を出し切るべき場面での判断力は誰にも負けないわ。なあなあで進む組織には強い苛立ちを感じるでしょう。ただ、正論は言い方ひとつで薬にも刃にもなる。切り口の美しさにも、こだわりなさい。',
@@ -379,6 +386,7 @@ const DAY_MASTER_TYPES = {
   },
   7: { // 辛
     title: '宝石', reading: 'かのと',
+    shareFlaw: '傷つきやすいのに、傷ついた顔だけは見せないのよ',
     line: 'あなたは、辛(かのと)。幾多の研磨に耐えて生まれた宝石よ。',
     desc: '鋭い美意識と、繊細な感性を併せ持つ人。人が見過ごす小さな綻びに真っ先に気づき、細部まで完璧を求めてしまう。その厳しさは、まず誰より自分自身に向かうでしょう。傷つきやすいのに、傷ついた顔を人に見せたくない。プライドの高さと打たれ弱さが同居しているのが、あなたの複雑なところよ。でもね、宝石が輝くのは、削られた過去があるからなの。あなたが恥じているその傷こそ、光を美しく乱反射させる面になっている。完璧である必要はないわ。他人に向ける採点の、半分の甘さで自分を採点しなさい。',
     work: '細部の精度が問われる仕事や、美的センスを活かせる分野で光るタイプ。雑な仕事が許せない性分は、品質そのものであなたの名を高めるわ。ただ、基準が高すぎて、自分も周りも息切れさせがち。「八割で出す」勇気も、時には必要よ。',
@@ -389,6 +397,7 @@ const DAY_MASTER_TYPES = {
   },
   8: { // 壬
     title: '大海', reading: 'みずのえ',
+    shareFlaw: '自由すぎて『掴めない人』と言われてきたでしょう',
     line: 'あなたは、壬(みずのえ)。岸に縛られず地平まで広がる大海よ。',
     desc: 'スケールが大きく、何より自由を愛する人。一つの場所、一つの正解に留まることが性に合わないでしょう。常識の枠を平然と越えていく発想力と行動力は、周りには真似のできない魅力よ。ただね、海は満ちれば引くもの。その気まぐれな潮の満ち引きが、「あの人は掴めない」という不信に変わることもあるはずよ。器の大きさは本物。だからこそ惜しいの、一つの場所に腰を据えてやり抜いた経験の少なさが。流れ続けるだけの水は、何も満たせないわ。一度でいいから、あなたの全部を注ぎ込む港を決めてみなさい。',
     work: '決まりきった毎日より、変化と刺激のある環境で生きるタイプ。複数の物事を同時に回す器用さと、常識外れの発想力が武器よ。ただし、軌道に乗る手前で飽きて手放す癖が最大の敵。始めたことを最後まで見届けた数だけ、あなたの信用は積み上がるの。',
@@ -399,6 +408,7 @@ const DAY_MASTER_TYPES = {
   },
   9: { // 癸
     title: '雨露', reading: 'みずのと',
+    shareFlaw: '全部見抜いてるのに、黙っているのよ',
     line: 'あなたは、癸(みずのと)。音もなく大地に染み入る雨露よ。',
     desc: '多くを語らず、静かに周りを観察している人。その瞳は、人が隠したつもりの本音や、場の空気のわずかな変化まで見抜いているでしょう。鋭い直感と深い知性。それがあなたの水源よ。ただ、雨露は静かすぎて、そこにあることに誰も気づかないの。あなたの中には、言葉にされないまま眠っている洞察が湖ほど溜まっているはずよ。「察してもらう」のを待つのは、もうやめなさい。あなたが黙っている限り、その知性は無いものと同じに扱われる。静かな水ほど、口を開いた時の一滴が深く響くもの。その一滴を、惜しまないことね。',
     work: '調査・分析・企画の裏側など、深く考える仕事で真価を発揮するタイプ。あなたの出す答えの質は、声の大きい人たちの十歩先を行っているはずよ。ただ、黙っていては誰にも届かない。会議で一度、あなたから口火を切ってごらんなさい。周りの目が変わるわ。',
@@ -582,8 +592,11 @@ const UI_TEXT = {
     optionalSummary: '生まれた時刻・場所・性別も入れる(任意・より詳しく)',
     footerNichishuLink: '10タイプの結果例を見る',
     footerOperator: '運営: Desk Animals Lab / お問い合わせ:',
-    shareText: (line) => `黒曜先生に占われました。\n${line}\nあなたも占われてみなさい→\n※エンタメ目的の診断です\n#黒曜診断 #四柱推命`,
-    shareTextLine: (line) => `黒曜先生に占われました。${line}\nあなたも占われてみなさい→\n※エンタメ目的の診断です`,
+    // シェア文(2026-11-12): 1行目にタイプ名、辛口の一言、干合の相手、最後に問いかけ(URLはこの後ろに付く)。人から送られた結果を見ている時は主語を変える
+    shareText: (r) => `${r.shared ? `【${r.stem}(${r.title})】タイプの鑑定を見た。` : `私は【${r.stem}(${r.title})】タイプだった。`}\n黒曜先生いわく「${r.flaw}」\n干合で引き合うのは【${r.pStem}(${r.pTitle})】の人だって。\n#黒曜診断 #四柱推命 ※エンタメ目的の診断です\nあなたは何タイプ?→`,
+    shareTextLine: (r) => `${r.shared ? `【${r.stem}(${r.title})】タイプの鑑定を見た。` : `私は【${r.stem}(${r.title})】タイプだった。`}黒曜先生いわく「${r.flaw}」。あなたは何タイプ?\n※エンタメ目的の診断です`,
+    kangoLabel: '相性メモ: 干合(かんごう)で引き合うのは ',
+    kangoSuffix: ' の人',
     dailyFortuneLabel: '🔮 今日の運勢',
     dailyFortuneLine: (stem, reading, line) => `${stem}(${reading})の日。${line}`,
     dailyStreakText: (n) => `🔥 ${n}日連続でチェック中!`,
@@ -665,8 +678,8 @@ const UI_TEXT = {
     optionalSummary: 'Add birth time, place & sex (optional, for a deeper reading)',
     footerNichishuLink: 'Browse the 10 Day-Master Types (Japanese)',
     footerOperator: 'Operated by Desk Animals Lab / Contact:',
-    shareText: (line) => `Kokuyou-sensei just read my fortune.\n${line}\nGet your own reading →\n(For entertainment purposes only)\n#KokuyoFortuneReading #BaZi`,
-    shareTextLine: (line) => `Kokuyou-sensei just read my fortune. ${line}\nGet your own reading →\n(For entertainment purposes only)`,
+    shareText: (r) => `Kokuyou-sensei just read my fortune.\n${r.line}\nGet your own reading →\n(For entertainment purposes only)\n#KokuyoFortuneReading #BaZi`,
+    shareTextLine: (r) => `Kokuyou-sensei just read my fortune. ${r.line}\nGet your own reading →\n(For entertainment purposes only)`,
     dailyFortuneLabel: "🔮 Today's Fortune",
     dailyFortuneLine: (stem, reading, line) => `Today is a ${stem} (${reading}) day. ${line}`,
     dailyStreakText: (n) => `🔥 ${n}-day streak!`,
@@ -1074,6 +1087,23 @@ function applyResult(pillars, dayYun) {
   if (myNichishuLink) myNichishuLink.setAttribute('href', (myNichishuLink.dataset.base || 'nichishu/') + STEM_SLUG[pillars.day.stemIdx] + '.html');
 
   $('result-line').textContent = type.line;
+  // 相性メモ(日本語版だけ。要素はJSで作るので英語版のDOMには影響しない)。相手の日主ページへのリンク付き
+  let kangoEl = $('result-kango');
+  if (LANG === 'ja') {
+    if (!kangoEl) {
+      kangoEl = document.createElement('p');
+      kangoEl.id = 'result-kango';
+      kangoEl.className = 'result-kango';
+      $('result-line').insertAdjacentElement('afterend', kangoEl);
+    }
+    const p = kangoPartnerIdx(pillars.day.stemIdx);
+    const a = document.createElement('a');
+    a.href = (myNichishuLink && myNichishuLink.dataset.base || 'nichishu/') + STEM_SLUG[p] + '.html';
+    a.textContent = STEMS[p] + '(' + DAY_MASTER_TYPES[p].title + ')';
+    kangoEl.replaceChildren(t.kangoLabel, a, t.kangoSuffix);
+  } else if (kangoEl) {
+    kangoEl.remove();
+  }
   $('result-desc').textContent = type.desc;
   $('result-work').textContent = type.work;
   $('result-love').textContent = type.love;
@@ -1207,6 +1237,15 @@ function restart() {
 }
 
 // シェア手段別の効果測定(gtag未読み込み時は何もしない、計測失敗が機能を止めないよう安全に呼ぶ)
+// 干合(甲己・乙庚・丙辛・丁壬・戊癸)の相手。シェア文と結果画面の相性メモで使う(2026-11-12)
+function kangoPartnerIdx(stemIdx) { return (stemIdx + 5) % 10; }
+
+function shareInfo() {
+  const idx = lastResult.pillars.day.stemIdx;
+  const p = kangoPartnerIdx(idx);
+  return { line: lastResult.type.line, shared: isSharedView, stem: STEMS[idx], title: DAY_MASTER_TYPES[idx].title, flaw: DAY_MASTER_TYPES[idx].shareFlaw, pStem: STEMS[p], pTitle: DAY_MASTER_TYPES[p].title };
+}
+
 function trackShareEvent(method) {
   if (typeof gtag === 'function') gtag('event', 'share', { method });
 }
@@ -1225,7 +1264,7 @@ function trackInterestPaidReading(e) {
 function shareResult() {
   if (!lastResult) return;
   const t = UI_TEXT[LANG];
-  const text = t.shareText(lastResult.type.line);
+  const text = t.shareText(shareInfo());
   const url = 'https://x.com/intent/tweet?text=' + encodeURIComponent(text) + '&url=' + encodeURIComponent(shareOgUrl());
   window.open(url, '_blank', 'noopener');
   trackShareEvent('x');
@@ -1234,7 +1273,7 @@ function shareResult() {
 function shareResultLine() {
   if (!lastResult) return;
   const t = UI_TEXT[LANG];
-  const text = t.shareTextLine(lastResult.type.line);
+  const text = t.shareTextLine(shareInfo());
   const url = 'https://social-plugins.line.me/lineit/share?url=' + encodeURIComponent(shareOgUrl()) + '&text=' + encodeURIComponent(text);
   window.open(url, '_blank', 'noopener');
   trackShareEvent('line');
@@ -1246,7 +1285,7 @@ function shareResultNative() {
   const t = UI_TEXT[LANG];
   navigator.share({
     title: t.pageTitle,
-    text: t.shareTextLine(lastResult.type.line),
+    text: t.shareTextLine(shareInfo()),
     url: resultUrl(),
   }).then(() => trackShareEvent('native')).catch(() => {});
 }
