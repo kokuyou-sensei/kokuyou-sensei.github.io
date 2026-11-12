@@ -1311,6 +1311,32 @@ function copyResultUrl() {
 }
 
 // ===== JA/EN切替UI =====
+// 専用X(@kokuyou_sensei)への入口(2026-11-12、日本語版だけ)。結果画面のシェアボタンの下とフッターに1行ずつ。
+// 要素はJSで作るので英語版のDOMには影響しない
+const X_FOLLOW_URL = 'https://x.com/kokuyou_sensei';
+function applyXFollow() {
+  const spots = [
+    ['x-follow-result', document.querySelector('#screen-result .result-actions'), 'lucky-remind'],
+    ['x-follow-footer', $('footer-operator') && $('footer-operator').parentElement, ''],
+  ];
+  spots.forEach(([id, anchor, cls]) => {
+    let el = $(id);
+    if (LANG !== 'ja' || !anchor) { if (el) el.remove(); return; }
+    if (el) return;
+    el = document.createElement('p');
+    el.id = id;
+    if (cls) el.className = cls;
+    const a = document.createElement('a');
+    a.className = 'footer-link';
+    a.href = X_FOLLOW_URL;
+    a.target = '_blank';
+    a.rel = 'noopener';
+    a.textContent = '暦の話と開運日は黒曜先生のXで → @kokuyou_sensei';
+    el.append(id === 'x-follow-result' ? '🌙 ' : '', a);
+    anchor.insertAdjacentElement('afterend', el);
+  });
+}
+
 function applyLangUI() {
   const t = UI_TEXT[LANG];
   document.title = t.pageTitle;
@@ -1361,6 +1387,7 @@ function applyLangUI() {
   refreshDayOptions();
   document.querySelector('#screen-result .result-actions').setAttribute('aria-label', t.ariaResultActions);
   $('footer-operator').textContent = t.footerOperator;
+  applyXFollow();
   $('follow-label-1').textContent = t.followLabel1;
   $('follow-link-mynichishu').textContent = t.followLinkMyNichishu;
   $('follow-label-2').textContent = t.followLabel2;
